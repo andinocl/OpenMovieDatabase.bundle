@@ -22,7 +22,7 @@ class OmdbApi(Agent.Movies):
   ]
 
   def search(self, results, media, lang):
-
+    Log("Media: " % media)
     if media.primary_agent == 'com.plexapp.agents.imdb':
 
       imdb_id = media.primary_metadata.id
